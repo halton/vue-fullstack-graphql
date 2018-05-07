@@ -42,8 +42,7 @@ const server = new GraphQLServer({
     ...req,
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: '__PRISMA_ENDPOINT__',
-      secret: 'mysecret123',
+      endpoint: 'http://localhost:4466/vue-graphql-boilerplate/dev',
       debug: true,
     }),
   }),
